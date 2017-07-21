@@ -1,3 +1,132 @@
+body, html, #container {
+  background-color: #333333;
+  font-family: "Proxima Nova", verdana, sans-serif;
+  color: white;
+  height: 100%;
+  position: relative;
+  line-height: 1.5em;
+  font-weight: lighter;
+  letter-spacing: 0.3px; }
 
+#nav {
+  width: 100%;
+  height: 40px;
+  color: #e4f8b7;
+  text-transform: uppercase; }
+  #nav ul {
+    text-align: center;
+    font-size: 0; }
+  #nav a {
+    color: #e4f8b7; }
+  #nav li {
+    display: inline-block;
+    font-size: 12px;
+    width: 16.393442623%;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #e4f8b7;
+    letter-spacing: 1px; }
+    #nav li:last-child {
+      border-right: none; }
+
+#logo {
+  position: absolute;
+  display: inline-block;
+  width: 500px;
+  top: 45%;
+  right: 25%; }
+  #logo img {
+    width: 100%; }
+
+#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+.images {
+  height: 75%; }
+
+#imageOne {
+  background-image: url("../images/MND_Web_Stones.jpg");
+  position: relative; }
+
+#imageTwo {
+  background-image: url("../images/MND_Web_Succulents.jpg"); }
+
+#imageThree {
+  background-image: url("../images/MND_Web_Mushrooms.jpg"); }
+
+#imageFour {
+  background-image: url("../images/MND_Web_Jars.jpg"); }
+
+#imageFive {
+  background-image: url("../images/MND_Web_Chairs.jpg"); }
+
+#imageSix {
+  background-image: url("../images/MND_Web_Canoe.jpg"); }
+
+#imageSeven {
+  background-image: url("../images/MND_Web_THM.jpg"); }
+
+.content {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100%;
+  text-align: center; }
+  .content p, .content ul {
+    width: 50%;
+    margin: 0 auto; }
+  .content h2 {
+    margin: 0 auto;
+    width: 50%;
+    font-weight: 800;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #e4f8b7;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .content h3 {
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 3px; }
+
+.content:nth-child(4n+1) {
+  background-color: #e4f8b7 !important;
+  color: #333333;
+  border-top: 8px solid #b8c7a5;
+  border-bottom: 8px solid #b8c7a5; }
+  .content:nth-child(4n+1) h2 {
+    color: #333333; }
+
+#credentials img {
+  width: 350px;
+  margin: 20px 0 20px 0; }
+
+#icons {
+  width: 60%;
+  display: inline-block;
+  margin: 40px auto 0 auto;
+  text-align: center; }
+  #icons .iconItems {
+    width: 22.2222222222%;
+    display: inline-block;
+    vertical-align: center; }
+    #icons .iconItems img {
+      width: 50%; }
+  #icons span {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.8px; }
+
+#footerLogo {
+  width: 300px; }
+  #footerLogo img {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
