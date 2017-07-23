@@ -38,6 +38,38 @@ body, html, #container {
   #logo img {
     width: 100%; }
 
+#scrollIcon {
+  width: 45px;
+  margin: 0 auto;
+  position: relative;
+  top: 62%;
+  left: 3%; }
+  #scrollIcon img {
+    width: 100%; }
+
+button {
+  display: block;
+  margin: 15px auto 0 auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e4f8b7;
+  color: #333333;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  button a {
+    text-decoration: none;
+    color: inherit; }
+  button span {
+    text-transform: none; }
+
+.greenButton {
+  background-color: #333333;
+  color: white; }
+
 #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven {
   background-attachment: fixed;
   background-position: center;
@@ -51,7 +83,8 @@ body, html, #container {
 
 #imageOne {
   background-image: url("../images/MND_Web_Stones.jpg");
-  position: relative; }
+  position: relative;
+  height: 90%; }
 
 #imageTwo {
   background-image: url("../images/MND_Web_Succulents.jpg"); }
@@ -77,7 +110,7 @@ body, html, #container {
   width: 100%;
   text-align: center; }
   .content p, .content ul {
-    width: 50%;
+    width: 45%;
     margin: 0 auto; }
   .content h2 {
     margin: 0 auto;
@@ -102,6 +135,21 @@ body, html, #container {
   .content:nth-child(4n+1) h2 {
     color: #333333; }
 
+#practice span {
+  text-transform: uppercase;
+  font-weight: normal; }
+
+#beliefs ol {
+  list-style: decimal inside none;
+  margin: 40px 0; }
+#beliefs li {
+  padding: 10px 0;
+  font-weight: 600; }
+  #beliefs li:nth-child(odd) {
+    background-color: #d5eea6; }
+#beliefs p {
+  margin-top: 20px; }
+
 #credentials img {
   width: 350px;
   margin: 20px 0 20px 0; }
@@ -124,9 +172,57 @@ body, html, #container {
     font-size: 0.9em;
     letter-spacing: 0.8px; }
 
+#photos {
+  width: 55%;
+  margin: 40px auto; }
+  #photos img {
+    width: 44%;
+    max-width: 200px;
+    min-width: 150px;
+    margin: 2%;
+    border: 4px solid #e4f8b7; }
+
+#life {
+  /*Bring footer closer*/
+  padding-bottom: 120px; }
+
+#socialIcons {
+  text-align: center; }
+  #socialIcons img {
+    width: 50px;
+    margin: 0 15px; }
+
+#footer {
+  text-align: center; }
+
+#footerLockup {
+  height: 170px;
+  width: 500px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: 35px; }
+
+#stones {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+  #stones img {
+    height: 100%; }
+
 #footerLogo {
-  width: 300px; }
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 20px;
+  right: 10px; }
   #footerLogo img {
     width: 100%; }
+
+#footerGradient {
+  height: 100px;
+  background-color: #333333;
+  background-image: linear-gradient(to bottom, #333333, #bababa 10%); }
 
 /*# sourceMappingURL=main.css.map */
