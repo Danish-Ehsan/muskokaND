@@ -8,6 +8,9 @@ body, html, #container {
   font-weight: lighter;
   letter-spacing: 0.3px; }
 
+/*-----------------------------------
+Landing Page
+-----------------------------------*/
 #nav {
   width: 100%;
   height: 40px;
@@ -47,6 +50,9 @@ body, html, #container {
   #scrollIcon img {
     width: 100%; }
 
+/*-----------------------------------
+Buttons
+-----------------------------------*/
 button {
   display: block;
   margin: 15px auto 0 auto;
@@ -68,8 +74,12 @@ button {
 
 .greenButton {
   background-color: #333333;
-  color: white; }
+  color: white;
+  margin: 5px auto 0 auto; }
 
+/*-----------------------------------
+Background Images
+-----------------------------------*/
 #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven {
   background-attachment: fixed;
   background-position: center;
@@ -104,6 +114,9 @@ button {
 #imageSeven {
   background-image: url("../images/MND_Web_THM.jpg"); }
 
+/*-----------------------------------
+Main Styling
+-----------------------------------*/
 .content {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -135,10 +148,9 @@ button {
   .content:nth-child(4n+1) h2 {
     color: #333333; }
 
-#practice span {
-  text-transform: uppercase;
-  font-weight: normal; }
-
+/*-----------------------------------
+Individual Sections
+-----------------------------------*/
 #beliefs ol {
   list-style: decimal inside none;
   margin: 40px 0; }
@@ -150,9 +162,13 @@ button {
 #beliefs p {
   margin-top: 20px; }
 
+#practice span {
+  text-transform: uppercase;
+  font-weight: normal; }
+
 #credentials img {
   width: 350px;
-  margin: 20px 0 20px 0; }
+  margin: 17px 0; }
 
 #icons {
   width: 60%;
@@ -192,6 +208,9 @@ button {
     width: 50px;
     margin: 0 15px; }
 
+/*-----------------------------------
+Footer
+-----------------------------------*/
 #footer {
   text-align: center; }
 

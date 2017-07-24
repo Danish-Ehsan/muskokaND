@@ -15,6 +15,12 @@ body, html, #container {
 	letter-spacing: 0.3px;
 }
 
+
+/*-----------------------------------
+Landing Page
+-----------------------------------*/
+
+
 #nav {
 	width: 100%;
 	height: 40px;
@@ -68,6 +74,12 @@ body, html, #container {
 	}
 }
 
+
+/*-----------------------------------
+Buttons
+-----------------------------------*/
+
+
 button {
 	display: block;
 	margin: 15px auto 0 auto;
@@ -94,7 +106,14 @@ button {
 .greenButton {
 	background-color: $primary-black;
 	color: white;
+	margin: 5px auto 0 auto;
 }
+
+
+/*-----------------------------------
+Background Images
+-----------------------------------*/
+
 
 %images {
 	background-attachment: fixed;
@@ -146,6 +165,12 @@ button {
 	background-image: url("../images/MND_Web_THM.jpg");
 }
 
+
+/*-----------------------------------
+Main Styling
+-----------------------------------*/
+
+
 .content {
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -187,10 +212,11 @@ button {
 	}
 }
 
-#practice span {
-	text-transform: uppercase;
-	font-weight: normal;
-}
+
+/*-----------------------------------
+Individual Sections
+-----------------------------------*/
+
 
 #beliefs {
 	ol {
@@ -212,9 +238,14 @@ button {
 	}
 }
 
+#practice span {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
 #credentials img {
 	width: 350px;
-	margin: 20px 0 20px 0;
+	margin: 17px 0;
 }
 
 #icons {
@@ -269,6 +300,12 @@ button {
 		margin: 0 15px;
 	}
 }
+
+
+/*-----------------------------------
+Footer
+-----------------------------------*/
+
 
 #footer {
 	text-align: center;
