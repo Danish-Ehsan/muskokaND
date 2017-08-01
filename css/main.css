@@ -15,7 +15,20 @@ Landing Page
   width: 100%;
   height: 40px;
   color: #e4f8b7;
-  text-transform: uppercase; }
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 5px solid #e4f8b7;
+  z-index: 1;
+  /*
+  &.otherPages {
+  	border-bottom: 1px solid $primary-green;
+  }*/ }
+  #nav #navBorder {
+    width: 100%;
+    position: relative;
+    top: 5px;
+    border-bottom: 3px solid #b8c7a5;
+    z-index: -1; }
   #nav ul {
     text-align: center;
     font-size: 0; }
@@ -25,11 +38,11 @@ Landing Page
       border-right: none; }
   #nav li {
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     width: 16.393442623%;
     text-align: center;
     line-height: 40px;
-    border-right: 1px solid #e4f8b7;
+    /*border-right: 1px solid $primary-green;*/
     letter-spacing: 1px;
     /*
     &:last-child {
@@ -37,8 +50,6 @@ Landing Page
     }*/ }
     #nav li:hover {
       color: white; }
-  #nav.otherPages {
-    border-bottom: 1px solid #e4f8b7; }
 
 #logo {
   position: absolute;
@@ -258,32 +269,69 @@ Links Page
 /*-----------------------------------
 Common Conditions Page
 -----------------------------------*/
-table {
-  margin-top: 0;
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 10px 0px;
-  background-color: #333333; }
-  table th {
-    background-color: #e4f8b7;
-    color: #333333;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px;
-    margin: 0px 5px 0px 5px; }
-  table tr:last-child td {
-    border-bottom: 1px solid #e4f8b7; }
-  table td {
-    width: 25%;
-    padding: 5px 10px 5px 10px;
+#conditionsTable {
+  margin: 60px auto 0 auto;
+  width: 80%; }
+  #conditionsTable ul {
+    width: 20%;
+    min-width: 200px;
+    display: inline-block;
+    border: 1px solid #e4f8b7;
     text-align: left;
-    margin: 0px 5px 0px 5px;
-    border-right: 1px solid #e4f8b7;
-    border-left: 1px solid #e4f8b7;
-    border-color: #e4f8b7; }
+    height: 650px;
+    vertical-align: top;
+    margin: 0px 2px 0px 2px; }
+    #conditionsTable ul .tableHead {
+      text-transform: uppercase;
+      background-color: #e4f8b7;
+      color: #333333;
+      text-align: center;
+      font-weight: 600; }
+  #conditionsTable li {
+    padding: 5px 10px 5px 10px; }
+    #conditionsTable li:nth-child(2) {
+      margin-top: 15px; }
 
+/*
+table {
+	margin-top: 100px;
+	width: 80%;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 10px 0px;
+	background-color: $primary-black;
+
+	th {
+		background-color: $primary-green;
+		color: $primary-black;
+		text-transform: uppercase;
+		font-weight: 600;
+		text-align: center;
+		padding: 10px;
+		margin: 0px 5px 0px 5px;
+	}
+
+	tr {
+		&:last-child td {
+			border-bottom: 1px solid $primary-green;
+
+	}
+
+	td {
+		width: 25%;
+		padding: 5px 10px 5px 10px;
+		text-align: left;
+		margin: 0px 5px 0px 5px;
+		border-right: 1px solid $primary-green;
+		border-left: 1px solid $primary-green;
+		border-color: $primary-green;
+
+		&:nth-child(1);
+
+	}
+
+}
+*/
 /*-----------------------------------
 Footer
 -----------------------------------*/
