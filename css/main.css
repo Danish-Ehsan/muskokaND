@@ -15,10 +15,11 @@ Landing Page
   width: 100%;
   height: 40px;
   color: #e4f8b7;
-  position: relative;
+  background-color: #333333;
+  position: fixed;
   text-transform: uppercase;
   border-bottom: 5px solid #e4f8b7;
-  z-index: 1;
+  z-index: 10;
   /*
   &.otherPages {
   	border-bottom: 1px solid $primary-green;
@@ -28,18 +29,23 @@ Landing Page
     position: relative;
     top: 5px;
     border-bottom: 3px solid #b8c7a5;
-    z-index: -1; }
+    z-index: 9; }
   #nav ul {
     text-align: center;
-    font-size: 0; }
+    width: 90%;
+    font-size: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
   #nav a {
     color: #e4f8b7; }
     #nav a:last-child li {
       border-right: none; }
   #nav li {
-    display: inline-block;
+    display: inline;
     font-size: 13px;
-    width: 16.393442623%;
+    padding: 10px 20px;
+    /*width: 100 / 6.1 * 1%;*/
     text-align: center;
     line-height: 40px;
     /*border-right: 1px solid $primary-green;*/
