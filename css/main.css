@@ -14,9 +14,6 @@ body, html, #container {
 /*-----------------------------------
 Navigation & Landing Page
 -----------------------------------*/
-#mobNav {
-  display: none; }
-
 #nav, #mobNav {
   width: 100%;
   height: 40px;
@@ -70,9 +67,13 @@ Mobile Nav
   height: auto;
   border: none; }
   #mobNav ul {
-    display: none; }
+    display: none;
+    margin: 20px auto; }
   #mobNav li {
-    display: block; }
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 15px; }
 
 #navButton {
   display: inline-block;
@@ -83,15 +84,17 @@ Mobile Nav
   width: 60px;
   height: 60px;
   background-color: #333333;
-  opacity: 0.7; }
+  opacity: 0.7;
+  cursor: pointer; }
   #navButton .navBtnLine {
     display: block;
     width: 50%;
     height: 3px;
     background-color: #e4f8b7;
-    margin: 8px auto; }
+    margin: 8px auto;
+    border-radius: 10% 10%; }
     #navButton .navBtnLine:first-child {
-      margin-top: 15px; }
+      margin-top: 17px; }
 
 #logo {
   position: absolute;

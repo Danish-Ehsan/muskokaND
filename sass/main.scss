@@ -26,9 +26,6 @@ body, html, #container {
 Navigation & Landing Page
 -----------------------------------*/
 
-#mobNav {
-	display: none;
-}
 
 #nav {
 	width: 100%;
@@ -98,10 +95,14 @@ Mobile Nav
 
 	ul {
 		display: none;
+		margin: 20px auto;
 	}
 
 	li {
 		display: block;
+		width: 50%;
+		margin: 0 auto;
+		font-size: 15px;
 	}
 }
 
@@ -115,6 +116,7 @@ Mobile Nav
 	height: 60px;
 	background-color: $primary-black;
 	opacity: 0.7;
+	cursor: pointer;
 
 	.navBtnLine {
 		display: block;
@@ -122,9 +124,10 @@ Mobile Nav
 		height: 3px;
 		background-color: $primary-green;
 		margin: 8px auto;
+		border-radius: 10% 10%;
 
 		&:first-child {
-			margin-top: 15px;
+			margin-top: 17px;
 		}
 	}
 }
