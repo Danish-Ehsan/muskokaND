@@ -68,12 +68,14 @@ Mobile Nav
   border: none; }
   #mobNav ul {
     display: none;
-    margin: 20px auto; }
+    margin: 30px auto; }
   #mobNav li {
     display: block;
     width: 50%;
+    height: 20px;
     margin: 0 auto;
-    font-size: 15px; }
+    font-size: 15px;
+    line-height: 18px; }
 
 #navButton {
   display: inline-block;
@@ -92,7 +94,8 @@ Mobile Nav
     height: 3px;
     background-color: #e4f8b7;
     margin: 8px auto;
-    border-radius: 10% 10%; }
+    border-radius: 3px;
+    opacity: 1; }
     #navButton .navBtnLine:first-child {
       margin-top: 17px; }
 
@@ -302,6 +305,11 @@ Contact Page
   font-weight: bold;
   color: #e4f8b7;
   line-height: 2em; }
+#contact a {
+  text-decoration: underline;
+  color: white; }
+  #contact a:hover {
+    color: #e4f8b7; }
 
 /*-----------------------------------
 Links Page

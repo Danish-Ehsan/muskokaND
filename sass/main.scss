@@ -95,14 +95,16 @@ Mobile Nav
 
 	ul {
 		display: none;
-		margin: 20px auto;
+		margin: 30px auto;
 	}
 
 	li {
 		display: block;
 		width: 50%;
+		height: 20px;
 		margin: 0 auto;
 		font-size: 15px;
+		line-height: 18px;
 	}
 }
 
@@ -124,7 +126,8 @@ Mobile Nav
 		height: 3px;
 		background-color: $primary-green;
 		margin: 8px auto;
-		border-radius: 10% 10%;
+		border-radius: 3px;
+		opacity: 1;
 
 		&:first-child {
 			margin-top: 17px;
@@ -430,6 +433,15 @@ Contact Page
 		font-weight: bold;
 		color: $primary-green;
 		line-height: 2em;
+	}
+
+	a {
+		text-decoration: underline;
+		color: white;
+
+		&:hover {
+			color: $primary-green;
+		}
 	}
 }
 
