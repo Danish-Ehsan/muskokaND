@@ -1,0 +1,30 @@
+
+/*-----------------------------------
+Media Queries
+-----------------------------------*/
+
+@media screen and (max-width: 1100px) {
+
+	#logo {
+		width: 400px;
+	}
+
+	#scrollIcon {
+		width: 35px;
+	}
+
+	#conditionsTable {
+		ul {
+			width: 40%;
+		}
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#mobNav {
+		display: block;
+	}
+	
+}

@@ -4,6 +4,12 @@ $secondary-green: #b8c7a5;
 $tertiary-green: #d5eea6;
 $primary-grey: #bababa;
 
+
+/*-----------------------------------
+Imports
+-----------------------------------*/
+
+
 body, html, #container {
 	background-color: $primary-black;
 	font-family: "Proxima Nova", verdana, sans-serif;
@@ -17,9 +23,12 @@ body, html, #container {
 
 
 /*-----------------------------------
-Landing Page
+Navigation & Landing Page
 -----------------------------------*/
 
+#mobNav {
+	display: none;
+}
 
 #nav {
 	width: 100%;
@@ -31,7 +40,7 @@ Landing Page
 	border-bottom: 5px solid $primary-green;
 	z-index: 10;
 
-	
+	/*second border*/
 	#navBorder {
 		width: 100%;
 		position: relative;
@@ -51,10 +60,6 @@ Landing Page
 
 	a {
 		color: $primary-green;
-
-		&:last-child li {
-			border-right: none;
-		}
 	}
 
 	li {
@@ -79,6 +84,49 @@ Landing Page
 	&.otherPages {
 		border-bottom: 1px solid $primary-green;
 	}*/
+}
+
+/*-----------------------------------
+Mobile Nav
+-----------------------------------*/
+
+#mobNav {
+	@extend #nav;
+	display: none;
+	height: auto;
+	border: none;
+
+	ul {
+		display: none;
+	}
+
+	li {
+		display: block;
+	}
+}
+
+#navButton {
+	display: inline-block;
+	position: fixed;
+	border-radius: 10% 10%;
+	top: 5%;
+	left: 7%;
+	width: 60px;
+	height: 60px;
+	background-color: $primary-black;
+	opacity: 0.7;
+
+	.navBtnLine {
+		display: block;
+		width: 50%;
+		height: 3px;
+		background-color: $primary-green;
+		margin: 8px auto;
+
+		&:first-child {
+			margin-top: 15px;
+		}
+	}
 }
 	
 
@@ -533,3 +581,9 @@ Footer
 			$primary-grey 10%
 		);
 }
+
+/*-----------------------------------
+Imports
+-----------------------------------*/
+
+@import 'media-queries';

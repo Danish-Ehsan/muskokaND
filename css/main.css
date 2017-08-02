@@ -1,3 +1,6 @@
+/*-----------------------------------
+Imports
+-----------------------------------*/
 body, html, #container {
   background-color: #333333;
   font-family: "Proxima Nova", verdana, sans-serif;
@@ -9,9 +12,12 @@ body, html, #container {
   letter-spacing: 0.3px; }
 
 /*-----------------------------------
-Landing Page
+Navigation & Landing Page
 -----------------------------------*/
-#nav {
+#mobNav {
+  display: none; }
+
+#nav, #mobNav {
   width: 100%;
   height: 40px;
   color: #e4f8b7;
@@ -20,28 +26,27 @@ Landing Page
   text-transform: uppercase;
   border-bottom: 5px solid #e4f8b7;
   z-index: 10;
+  /*second border*/
   /*
   &.otherPages {
   	border-bottom: 1px solid $primary-green;
   }*/ }
-  #nav #navBorder {
+  #nav #navBorder, #mobNav #navBorder {
     width: 100%;
     position: relative;
     top: 5px;
     border-bottom: 3px solid #b8c7a5;
     z-index: 9; }
-  #nav ul {
+  #nav ul, #mobNav ul {
     text-align: center;
     width: 90%;
     font-size: 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-around; }
-  #nav a {
+  #nav a, #mobNav a {
     color: #e4f8b7; }
-    #nav a:last-child li {
-      border-right: none; }
-  #nav li {
+  #nav li, #mobNav li {
     display: inline;
     font-size: 13px;
     padding: 10px 20px;
@@ -54,8 +59,39 @@ Landing Page
     &:last-child {
     	border-right: none;
     }*/ }
-    #nav li:hover {
+    #nav li:hover, #mobNav li:hover {
       color: white; }
+
+/*-----------------------------------
+Mobile Nav
+-----------------------------------*/
+#mobNav {
+  display: none;
+  height: auto;
+  border: none; }
+  #mobNav ul {
+    display: none; }
+  #mobNav li {
+    display: block; }
+
+#navButton {
+  display: inline-block;
+  position: fixed;
+  border-radius: 10% 10%;
+  top: 5%;
+  left: 7%;
+  width: 60px;
+  height: 60px;
+  background-color: #333333;
+  opacity: 0.7; }
+  #navButton .navBtnLine {
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #e4f8b7;
+    margin: 8px auto; }
+    #navButton .navBtnLine:first-child {
+      margin-top: 15px; }
 
 #logo {
   position: absolute;
@@ -376,5 +412,27 @@ Footer
   height: 100px;
   background-color: #333333;
   background-image: linear-gradient(to bottom, #333333, #bababa 10%); }
+
+/*-----------------------------------
+Imports
+-----------------------------------*/
+/*-----------------------------------
+Media Queries
+-----------------------------------*/
+@media screen and (max-width: 1100px) {
+  #logo {
+    width: 400px; }
+
+  #scrollIcon {
+    width: 35px; }
+
+  #conditionsTable ul {
+    width: 40%; }
+
+  #nav, #mobNav {
+    display: none; }
+
+  #mobNav {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */
