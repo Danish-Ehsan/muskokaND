@@ -13,6 +13,7 @@ Imports
 body, html, #container {
 	background-color: $primary-black;
 	font-family: "Proxima Nova", verdana, sans-serif;
+	font-size: 16px;
 	color: white;
 	height: 100%;
 	position: relative;
@@ -123,10 +124,10 @@ Mobile Nav
 	.navBtnLine {
 		display: block;
 		width: 50%;
-		height: 3px;
+		height: 4px;
 		background-color: $primary-green;
-		margin: 8px auto;
-		border-radius: 3px;
+		margin: 7px auto;
+		/*border-radius: 3px;*/
 		opacity: 1;
 
 		&:first-child {
@@ -350,6 +351,8 @@ Individual Sections - Main Page
 
 	h3 {
 		margin-bottom: 2px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
