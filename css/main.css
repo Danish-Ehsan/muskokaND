@@ -77,6 +77,13 @@ Mobile Nav
     margin: 0 auto;
     font-size: 15px;
     line-height: 18px; }
+  #mobNav #mobNavBorder {
+    background-color: #e4f8b7;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 5px;
+    width: 100%; }
 
 #navButton {
   display: inline-block;
@@ -111,10 +118,12 @@ Mobile Nav
 
 #scrollIcon {
   width: 45px;
+  height: 20px;
   margin: 0 auto;
-  position: relative;
-  top: 62%;
-  left: 3%; }
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0; }
   #scrollIcon img {
     width: 100%; }
 
@@ -148,21 +157,28 @@ Buttons
 /*-----------------------------------
 Background Images
 -----------------------------------*/
+#imgCont1 {
+  height: 90%; }
+
+.imageContainer {
+  height: 75%; }
+
 #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight {
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; }
 
 .images {
-  height: 75%; }
+  height: 100%; }
 
 #imageOne {
   background-image: url("../images/MND_Web_Stones.jpg");
   position: relative;
-  height: 90%; }
+  height: 100%; }
 
 #imageTwo {
   background-image: url("../images/MND_Web_Succulents.jpg"); }
@@ -192,7 +208,8 @@ Main Styling
   padding-top: 150px;
   padding-bottom: 150px;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: #333333; }
   .content p, .content ul {
     width: 45%;
     margin: 0 auto; }
@@ -439,7 +456,7 @@ Media Queries
     min-width: 300px; }
 
   #scrollIcon {
-    width: 35px; }
+    width: 45px; }
 
   #conditionsTable ul {
     width: 40%; }
@@ -448,13 +465,20 @@ Media Queries
     display: none; }
 
   #mobNav {
-    display: block; } }
+    display: block; }
+
+  #imageFive {
+    background-position: 95%; } }
 @media screen and (max-width: 830px) {
   #imageOne {
     background-position: 30% 0%; }
 
   #logo {
     right: 15%; }
+
+  #scrollIcon {
+    left: 15%;
+    top: 57%; }
 
   .content p, .content ul {
     width: 65%; }
@@ -478,16 +502,40 @@ Media Queries
 @media screen and (max-width: 600px) {
   .content {
     padding-top: 75px;
-    padding-bottom: 75px; }
+    padding-bottom: 75px;
+    z-index: 999;
+    position: relative; }
     .content h2 {
       font-size: 1.7em;
       width: 80%; }
     .content h3 {
-      font-size: 1em; }
+      font-size: 1em;
+      margin-left: auto;
+      margin-right: auto; }
     .content p {
       font-size: 0.92em; }
     .content a {
       font-size: 0.95em; }
+
+  #imgCont1 {
+    height: 90%; }
+
+  .imageContainer {
+    width: 100%;
+    height: 75%; }
+
+  #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight {
+    background-attachment: scroll;
+    height: 100%;
+    width: 100%; }
+
+  #imageOne {
+    /*background-position: 8% 0;*/
+    background-image: url("../images/MND_Web_Stones_Mobile.jpg");
+    background-position: center; }
+
+  #imageThree {
+    background-position: 75%; }
 
   .button {
     padding: 8px 15px; }
@@ -504,18 +552,21 @@ Media Queries
         margin-top: 3vw; }
 
   #logo {
-    top: 6%;
+    top: 5.5%;
     right: 6%;
     width: 70%;
-    min-width: 0; }
+    min-width: 0;
+    z-index: 9; }
 
   #scrollIcon {
-    top: 103%;
-    left: 0; }
+    top: 93%;
+    left: 0;
+    width: 35px;
+    z-index: 99999; }
 
   #about {
-    padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-top: 120px;
+    padding-bottom: 120px; }
 
   #beliefs li {
     font-size: 0.95em;
@@ -544,17 +595,17 @@ Media Queries
     #icons .iconItems:nth-child(n+3) {
       margin-top: 15px; }
 
-  #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight {
-    background-attachment: scroll; }
+  #life {
+    padding-bottom: 75px; }
 
-  #imageOne {
-    background-position: 8% 0; }
+  #socialIcons img {
+    width: 10%;
+    margin: 0 3%; }
 
-  #imageThree {
-    background-position: 75% 0; }
-
-  #imageFive {
-    background-position: 95% 0; }
+  #footer, #footerContact {
+    z-index: 999;
+    position: relative;
+    background-color: #333333; }
 
   #footerLockup {
     width: 80%;

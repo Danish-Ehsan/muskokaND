@@ -107,6 +107,15 @@ Mobile Nav
 		font-size: 15px;
 		line-height: 18px;
 	}
+
+	#mobNavBorder {
+		background-color: $primary-green;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		height: 5px;
+		width: 100%;
+	}
 }
 
 #navButton {
@@ -151,10 +160,12 @@ Mobile Nav
 
 #scrollIcon {
 	width: 45px;
+	height: 20px;
 	margin: 0 auto;
-	position: relative;
-	top: 62%;
-	left: 3%;
+	position: absolute;
+	top: 60%;
+	left: 0;
+	right: 0;
 	img {
 		width: 100%
 	}
@@ -200,10 +211,18 @@ Buttons
 Background Images
 -----------------------------------*/
 
+#imgCont1 {
+	height: 90%;
+}
+
+.imageContainer {
+	height: 75%;
+}
 
 %images {
 	background-attachment: fixed;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -211,14 +230,14 @@ Background Images
 }
 
 .images {
-	height: 75%;
+	height: 100%;
 }
 
 #imageOne {
 	@extend %images;
 	background-image: url("../images/MND_Web_Stones.jpg");
 	position: relative;
-	height: 90%;
+	height: 100%;
 }
 
 #imageTwo {
@@ -267,6 +286,7 @@ Main Styling
 	padding-bottom: 150px;
 	width: 100%;
 	text-align: center;
+	background-color: $primary-black;
 
 	p, ul {
 		width: 45%;

@@ -16,7 +16,7 @@ $(function() {
 							//console.log('scrollNew: ' + scrollNew)
 							if ((scrollNew - scrollOrg) > 100) {
 							$nav.slideUp();
-						} else if ((scrollNew - scrollOrg) < -100 || scrollNew < 50) {
+						} else if ((scrollNew - scrollOrg) < -100 || (scrollNew < 50 && $window.width()) >= 1100) {
 							$nav.slideDown();
 						}
 						}, 200);

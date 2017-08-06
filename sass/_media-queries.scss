@@ -11,7 +11,7 @@ Media Queries
 	}
 
 	#scrollIcon {
-		width: 35px;
+		width: 45px;
 	}
 
 	#conditionsTable {
@@ -28,6 +28,10 @@ Media Queries
 		display: block;
 	}
 
+	#imageFive {
+		background-position: 95%;
+	}
+
 }
 
 @media screen and (max-width: 830px) {
@@ -38,6 +42,11 @@ Media Queries
 
 	#logo {
 		right: 15%;
+	}
+
+	#scrollIcon {
+		left: 15%;
+		top: 57%;
 	}
 
 	.content {
@@ -82,9 +91,13 @@ Media Queries
 
 @media screen and (max-width: 600px) {
 
+
+
 	.content {
 		padding-top: 75px;
 		padding-bottom: 75px;
+		z-index: 999;
+		position: relative;
 
 		h2 {
 			font-size: 1.7em;
@@ -93,6 +106,8 @@ Media Queries
 
 		h3 {
 			font-size: 1em;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		p {
@@ -103,6 +118,34 @@ Media Queries
 			font-size: 0.95em;
 		}
 	}
+
+	#imgCont1 {
+		height: 90%;
+	}
+
+	.imageContainer {
+		width: 100%;
+		height: 75%;
+	}
+
+	%images {
+		background-attachment: scroll;
+		height: 100%;
+		width: 100%;
+	}	
+
+	#imageOne {
+		/*background-position: 8% 0;*/
+		background-image: url("../images/MND_Web_Stones_Mobile.jpg");
+		background-position: center;
+	}
+
+
+	#imageThree {
+		background-position: 75%;
+	}
+
+
 
 	.button {
 		padding: 8px 15px;
@@ -128,21 +171,24 @@ Media Queries
 	}
 
 	#logo {
-		top: 6%;
+		top: 5.5%;
 		right: 6%;
 		width: 70%;
 		min-width: 0;
+		z-index: 9;
 	}
 
 	#scrollIcon {
-		top: 103%;
+		top: 93%;
 		left: 0;
+		width: 35px;
+		z-index: 99999;
 	}
 
 
 	#about {
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 120px;
+		padding-bottom: 120px;
 	}
 
 	#beliefs {
@@ -186,22 +232,23 @@ Media Queries
 		}
 	}
 
-	%images {
-		background-attachment: scroll;
-	}	
 
-	#imageOne {
-		background-position: 8% 0;
+	#life {
+		padding-bottom: 75px;
 	}
 
-	#imageThree {
-		background-position: 75% 0;
+	#socialIcons {
+		img {
+			width: 10%;
+			margin: 0 3%;
+		}
 	}
 
-	#imageFive {
-		background-position: 95% 0;
+	#footer {
+		z-index: 999;
+		position: relative;
+		background-color: $primary-black;
 	}
-
 
 	#footerLockup {
 		width: 80%;
