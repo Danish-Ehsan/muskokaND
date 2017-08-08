@@ -130,19 +130,66 @@ Mobile Nav
 	opacity: 0.7;
 	cursor: pointer;
 
-	.navBtnLine {
-		display: block;
+	#navInner {
+		position: relative;
 		width: 50%;
-		height: 4px;
-		background-color: $primary-green;
-		margin: 7px auto;
-		/*border-radius: 3px;*/
-		opacity: 1;
-
-		&:first-child {
-			margin-top: 17px;
-		}
+		margin: 0 auto;
+			top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
 	}
+		
+		.navBtnLine {
+			display: block;
+			background-color: $primary-green;
+			height: 4px;
+			width: 100%;
+			margin: 8px auto;
+			position: relative;
+			top: 0;
+			transition: top 0.15s linear 0.15s, transform 0.15s;
+
+			&:first-child {
+				margin-top: 0px;
+			}
+
+
+			&.open {
+				transition: top 0.15s, transform 0.15s linear 0.15s;
+
+				&:first-child {
+					top: 12px;
+					transform: rotate(45deg);
+					transform-origin: center;
+					-ms-transform-origin: center;
+					-ms-transform: rotate(45deg);
+					-webkit-transform-origin: center;
+					-webkit-transform: rotate(45deg);
+				}
+
+				&:nth-child(2) {
+					transform: rotate(45deg);
+					transform-origin: center;
+					-ms-transform-origin: center;
+					-ms-transform: rotate(45deg);
+					-webkit-transform-origin: center;
+					-webkit-transform: rotate(45deg);
+				}
+
+				&:last-child {
+					top: -12px;
+					transform-origin: center;
+					transform: rotate(-45deg);
+					-ms-transform-origin: center;
+					-ms-transform: rotate(-45deg);
+					-webkit-transform-origin: center;
+					-webkit-transform: rotate(-45deg);
+				}
+			}
+			
+		}
+	
 }
 	
 
@@ -612,12 +659,44 @@ Footer
 #footerGradient {
 	height: 100px;
 	background-color: $primary-black;
+	vertical-align: baseline;
 	background-image: 
 		linear-gradient(
 			to bottom,
 			$primary-black,
 			$primary-grey 10%
 		);
+}
+
+#footerInfo {
+	background-color: $primary-grey;
+
+	p {
+		display: inline-block;
+		width: auto;
+		margin: 0 15px;
+		color: $primary-black;
+	}
+
+	h3 {
+		color: $primary-green;
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+	span {
+		font-weight: bold;
+		color: $primary-green;
+		line-height: 2em;
+	}
+
+	a {
+		text-decoration: underline;
+		color: white;
+
+		&:hover {
+			color: $primary-green;
+		}
+	}
 }
 
 /*-----------------------------------

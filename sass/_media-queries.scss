@@ -59,6 +59,11 @@ Media Queries
 			width: 70%;
 		}
 
+		h3 {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		h2 {
 			line-height: 1em;
 		}
@@ -91,8 +96,6 @@ Media Queries
 
 @media screen and (max-width: 600px) {
 
-
-
 	.content {
 		padding-top: 75px;
 		padding-bottom: 75px;
@@ -117,6 +120,12 @@ Media Queries
 			font-size: 0.95em;
 		}
 	}
+
+
+/*-----------------------------------
+Background Images
+-----------------------------------*/
+
 
 	#imgCont1 {
 		height: 90%;
@@ -145,6 +154,10 @@ Media Queries
 	}
 
 
+/*-----------------------------------
+Navigation
+-----------------------------------*/
+
 
 	.button {
 		padding: 8px 15px;
@@ -160,14 +173,23 @@ Media Queries
 		width: 12vw;
 		height: 12vw;
 
-		.navBtnLine {
-			height: 3px;
-
-			&:first-child {
-				margin-top: 3vw;
-			}
+		#navInner {
+			position: relative;
+			width: 50%;
+			margin: 0 auto;
+ 			top: 50%;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
 		}
 	}
+
+
+
+/*-----------------------------------
+Landing Page
+-----------------------------------*/
+
 
 	#logo {
 		top: 5.5%;
@@ -242,6 +264,31 @@ Media Queries
 			margin: 0 3%;
 		}
 	}
+
+/*-----------------------------------
+Other Pages
+-----------------------------------*/
+
+	#conditions {
+		ul {
+			width: 70%;
+			height: auto;
+		}
+
+		li {
+			padding: 5px 14px 5px 14px;
+
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+
+/*-----------------------------------
+Footer
+-----------------------------------*/
+
 
 	#footer {
 		z-index: 999;
