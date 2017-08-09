@@ -107,9 +107,9 @@ Mobile Nav
   #navButton .navBtnLine {
     display: block;
     background-color: #e4f8b7;
-    height: 4px;
+    height: 3px;
     width: 100%;
-    margin: 8px auto;
+    margin: 7px auto;
     position: relative;
     top: 0;
     transition: top 0.15s linear 0.15s, transform 0.15s; }
@@ -118,7 +118,7 @@ Mobile Nav
     #navButton .navBtnLine.open {
       transition: top 0.15s, transform 0.15s linear 0.15s; }
       #navButton .navBtnLine.open:first-child {
-        top: 12px;
+        top: 10px;
         transform: rotate(45deg);
         transform-origin: center;
         -ms-transform-origin: center;
@@ -133,7 +133,7 @@ Mobile Nav
         -webkit-transform-origin: center;
         -webkit-transform: rotate(45deg); }
       #navButton .navBtnLine.open:last-child {
-        top: -12px;
+        top: -10px;
         transform-origin: center;
         transform: rotate(-45deg);
         -ms-transform-origin: center;
@@ -443,7 +443,8 @@ table {
 Footer
 -----------------------------------*/
 #footer, #footerContact {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 #footerContact {
   margin-top: 100px; }
@@ -474,7 +475,7 @@ Footer
     width: 100%; }
 
 #footerGradient {
-  height: 100px;
+  height: 80px;
   background-color: #333333;
   vertical-align: baseline;
   background-image: linear-gradient(to bottom, #333333, #bababa 10%); }
@@ -484,6 +485,7 @@ Footer
   #footerInfo p {
     display: inline-block;
     width: auto;
+    font-size: 1em;
     margin: 0 15px;
     color: #333333; }
   #footerInfo h3 {
@@ -496,7 +498,7 @@ Footer
     line-height: 2em; }
   #footerInfo a {
     text-decoration: underline;
-    color: white; }
+    color: #333333; }
     #footerInfo a:hover {
       color: #e4f8b7; }
 
@@ -609,6 +611,8 @@ Media Queries
 
   #navButton {
     width: 12vw;
+    max-width: 60px;
+    max-height: 60px;
     height: 12vw; }
     #navButton #navInner {
       position: relative;
@@ -633,7 +637,7 @@ Media Queries
     top: 93%;
     left: 0;
     width: 35px;
-    z-index: 99999; }
+    z-index: 9; }
 
   #about {
     padding-top: 120px;
@@ -702,6 +706,17 @@ Media Queries
   #footerLogo {
     width: 70%;
     margin-left: 3%;
-    bottom: 0px; } }
+    bottom: 0px; }
+
+  #footerInfo {
+    padding-bottom: 20px;
+    position: relative; }
+    #footerInfo p {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 0.9em;
+      position: relative;
+      bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

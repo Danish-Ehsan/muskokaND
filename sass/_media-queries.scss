@@ -171,6 +171,8 @@ Navigation
 
 	#navButton {
 		width: 12vw;
+		max-width: 60px;
+		max-height: 60px;
 		height: 12vw;
 
 		#navInner {
@@ -203,7 +205,7 @@ Landing Page
 		top: 93%;
 		left: 0;
 		width: 35px;
-		z-index: 99999;
+		z-index: 9;
 	}
 
 
@@ -309,6 +311,19 @@ Footer
 		width: 70%;
 		margin-left: 3%;
 		bottom: 0px;
+	}
+
+	#footerInfo {
+		padding-bottom: 20px;
+		position: relative;
+		p {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			font-size: 0.9em;
+			position: relative;
+			bottom: 20px;
+		}
 	}
 
 }

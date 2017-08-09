@@ -5,6 +5,8 @@ $(function() {
 
     	if( target.length ) {
       	  event.preventDefault();
+      	  $navList.slideToggle();
+		  $butLine.toggleClass('open');
       	  $('html, body').stop().animate({
        	     scrollTop: target.offset().top
         }, 800);

@@ -143,9 +143,9 @@ Mobile Nav
 		.navBtnLine {
 			display: block;
 			background-color: $primary-green;
-			height: 4px;
+			height: 3px;
 			width: 100%;
-			margin: 8px auto;
+			margin: 7px auto;
 			position: relative;
 			top: 0;
 			transition: top 0.15s linear 0.15s, transform 0.15s;
@@ -159,7 +159,7 @@ Mobile Nav
 				transition: top 0.15s, transform 0.15s linear 0.15s;
 
 				&:first-child {
-					top: 12px;
+					top: 10px;
 					transform: rotate(45deg);
 					transform-origin: center;
 					-ms-transform-origin: center;
@@ -178,7 +178,7 @@ Mobile Nav
 				}
 
 				&:last-child {
-					top: -12px;
+					top: -10px;
 					transform-origin: center;
 					transform: rotate(-45deg);
 					-ms-transform-origin: center;
@@ -617,6 +617,7 @@ Footer
 
 #footer {
 	text-align: center;
+	position: relative;
 }
 
 #footerContact {
@@ -657,7 +658,7 @@ Footer
 }
 
 #footerGradient {
-	height: 100px;
+	height: 80px;
 	background-color: $primary-black;
 	vertical-align: baseline;
 	background-image: 
@@ -674,6 +675,7 @@ Footer
 	p {
 		display: inline-block;
 		width: auto;
+		font-size: 1em;
 		margin: 0 15px;
 		color: $primary-black;
 	}
@@ -683,6 +685,7 @@ Footer
 		margin-top: 40px;
 		margin-bottom: 10px;
 	}
+
 	span {
 		font-weight: bold;
 		color: $primary-green;
@@ -691,7 +694,7 @@ Footer
 
 	a {
 		text-decoration: underline;
-		color: white;
+		color: $primary-black;
 
 		&:hover {
 			color: $primary-green;

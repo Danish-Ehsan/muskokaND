@@ -1,8 +1,8 @@
 $(function () {
 
-	var $navList = $('#mobNav ul');
+	$navList = $('#mobNav ul');
 	var $navButton = $("#navButton");
-	var $butLine = $('.navBtnLine');
+	$butLine = $('.navBtnLine');
 
 
 	$navButton.on('click', function() {
