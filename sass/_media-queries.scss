@@ -157,21 +157,6 @@ Background Images
 -----------------------------------*/
 
 
-	#imgCont1 {
-		height: 90%;
-	}
-
-	.imageContainer {
-		width: 100%;
-		height: 75%;
-	}
-
-	%images {
-		background-attachment: scroll;
-		height: 100%;
-		width: 100%;
-	}	
-
 	#imageOne {
 		/*background-position: 8% 0;*/
 		background-image: url("../images/MND_Web_Stones_Mobile.jpg");
@@ -181,6 +166,14 @@ Background Images
 
 	#imageThree {
 		background-position: 75%;
+	}
+
+	#imgCont7 {
+		height: 45%;
+	}
+
+	#imageSeven {
+		background-size: 130% auto;
 	}
 
 
