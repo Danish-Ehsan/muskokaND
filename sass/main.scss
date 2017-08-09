@@ -236,13 +236,9 @@ Buttons
 	font-size: 1em;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	a {
 		text-decoration: none;
 		color: inherit;
-	}
-	span {
-		text-transform: none;
 	}
 
 }
@@ -364,6 +360,8 @@ Main Styling
 		letter-spacing: 0.8px;
 		text-transform: uppercase;
 		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	&.green {
@@ -423,9 +421,9 @@ Individual Sections - Main Page
 	}
 }
 
-#practice span {
-	text-transform: uppercase;
-	font-weight: normal;
+#practice h3 {
+	color: $primary-green;
+	margin-bottom: 0px;
 }
 
 #credentials img {
@@ -460,15 +458,17 @@ Individual Sections - Main Page
 }
 
 #photos {
-	width: 55%;
-	margin: 40px auto;
+	width: 100%;
+	margin: 60px auto;
+	font-size: 0;
+	line-height: 0;
+	border-top: 4px solid $primary-green;
+	border-bottom: 4px solid $primary-green;
 
 	img {
-		width: 44%;
-		max-width: 200px;
-		min-width: 150px;
-		margin: 2%;
-		border: 4px solid $primary-green;
+		width: 33%;
+		margin: 0px;
+		padding: 0px;
 	}
 }
 
@@ -481,7 +481,7 @@ Individual Sections - Main Page
 	text-align: center;
 
 	img {
-		width: 50px;
+		width: 40px;
 		margin: 0 15px;
 	}
 }
@@ -536,8 +536,26 @@ Links Page
 Common Conditions Page
 -----------------------------------*/
 
+
+#conditions {
+	&.content {
+		padding-bottom: 110px;
+	}
+
+	h3 {
+		margin: 30px auto 0 auto;
+		color: $primary-green;
+	}
+
+	.button {
+		margin-top: 10px;
+	}
+
+}
+
+
 #conditionsTable {
-	margin: 60px auto 0 auto;
+	margin: 60px auto;
 	width: 80%;
 
 	ul {
@@ -675,7 +693,10 @@ Footer
 	p {
 		display: inline-block;
 		width: auto;
-		font-size: 1em;
+		position: relative;
+		bottom: 5px;
+		font-size: 0.9em;
+		font-weight: 400;
 		margin: 0 15px;
 		color: $primary-black;
 	}
@@ -684,12 +705,6 @@ Footer
 		color: $primary-green;
 		margin-top: 40px;
 		margin-bottom: 10px;
-	}
-
-	span {
-		font-weight: bold;
-		color: $primary-green;
-		line-height: 2em;
 	}
 
 	a {

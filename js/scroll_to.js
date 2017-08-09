@@ -9,7 +9,7 @@ $(function() {
 		  $butLine.toggleClass('open');
       	  $('html, body').stop().animate({
        	     scrollTop: target.offset().top
-        }, 800);
+        }, 600);
     }
 });
 
