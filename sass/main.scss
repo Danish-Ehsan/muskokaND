@@ -522,10 +522,16 @@ Links Page
 
 
 #links {
+	h2 {
+		margin-bottom: 0px;
+	}
 	h3 {
 		margin-top: 60px;
 	}
-
+	span  h3 {
+		margin-top: 0px;
+		color: $primary-green;
+	}
 	li {
 		margin: 7px 0;
 	}

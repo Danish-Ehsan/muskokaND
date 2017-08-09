@@ -335,7 +335,7 @@ Individual Sections - Main Page
   border-top: 4px solid #e4f8b7;
   border-bottom: 4px solid #e4f8b7; }
   #photos img {
-    width: 33%;
+    width: 33.2%;
     margin: 0px;
     padding: 0px; }
 
@@ -369,8 +369,13 @@ Contact Page
 /*-----------------------------------
 Links Page
 -----------------------------------*/
+#links h2 {
+  margin-bottom: 0px; }
 #links h3 {
   margin-top: 60px; }
+#links span h3 {
+  margin-top: 0px;
+  color: #e4f8b7; }
 #links li {
   margin: 7px 0; }
 
@@ -549,12 +554,26 @@ Media Queries
   #imageOne {
     background-position: 30% 0%; }
 
+  #imgCont1 {
+    height: 90%; }
+
+  .imageContainer {
+    width: 100%;
+    height: 75%; }
+
+  #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight {
+    background-attachment: scroll;
+    height: 100%;
+    width: 100%; }
+
+  #imageThree {
+    background-position: 75%; }
+
   #logo {
     right: 15%; }
 
   #scrollIcon {
-    left: 15%;
-    top: 57%; }
+    left: 15%; }
 
   .content p, .content ul {
     width: 65%; }
