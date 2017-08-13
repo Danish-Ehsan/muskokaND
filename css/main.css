@@ -352,6 +352,8 @@ Individual Sections - Main Page
 /*-----------------------------------
 Contact Page
 -----------------------------------*/
+#contact.content {
+  padding-bottom: 75px; }
 #contact h3 {
   color: #e4f8b7;
   margin-top: 40px;
@@ -365,6 +367,14 @@ Contact Page
   color: white; }
   #contact a:hover {
     color: #e4f8b7; }
+
+#contactScroll {
+  width: 8%;
+  max-width: 50px;
+  min-width: 40px;
+  margin: 50px auto 0 auto; }
+  #contactScroll img {
+    width: 100%; }
 
 /*-----------------------------------
 Links Page
@@ -590,7 +600,7 @@ Media Queries
     font-size: 0.85em; }
     #icons .iconItems img {
       width: 60%; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
   .content {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -610,6 +620,9 @@ Media Queries
   /*-----------------------------------
   Background Images
   -----------------------------------*/
+  #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight {
+    background-size: auto 150%; }
+
   #imageOne {
     /*background-position: 8% 0;*/
     background-image: url("../images/MND_Web_Stones_Mobile.jpg");
@@ -621,9 +634,11 @@ Media Queries
   #imgCont7 {
     height: 45%; }
 
-  #imageSeven {
-    background-size: 130% auto; }
-
+  /*
+  	#imageSeven {
+  		background-size: 130% auto;
+  	}
+  */
   /*-----------------------------------
   Navigation
   -----------------------------------*/
@@ -660,7 +675,7 @@ Media Queries
   #scrollIcon {
     top: 93%;
     left: 0;
-    width: 35px;
+    width: 40px;
     z-index: 9; }
 
   #about {

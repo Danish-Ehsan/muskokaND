@@ -494,6 +494,10 @@ Contact Page
 
 #contact {
 
+	&.content {
+		padding-bottom: 75px;
+	}
+
 	h3 {
 		color: $primary-green;
 		margin-top: 40px;
@@ -512,6 +516,17 @@ Contact Page
 		&:hover {
 			color: $primary-green;
 		}
+	}
+}
+
+#contactScroll {
+	width: 8%;
+	max-width: 50px;
+	min-width: 40px;
+	margin: 50px auto 0 auto;
+
+	img {
+		width: 100%;
 	}
 }
 
