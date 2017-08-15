@@ -457,6 +457,7 @@ Individual Sections - Main Page
 	}
 }
 
+/*
 #photos {
 	width: 100%;
 	margin: 60px auto;
@@ -471,6 +472,20 @@ Individual Sections - Main Page
 		padding: 0px;
 	}
 }
+*/
+
+#instafeed {
+	width: 100%;
+	margin: 60px auto;
+	font-size: 0;
+	line-height: 0;
+	border-top: 4px solid $primary-green;
+	border-bottom: 4px solid $primary-green;
+	img {
+		width: 33.33%;
+	}
+}
+
 
 #life {
 	/*Bring footer closer*/
@@ -521,7 +536,7 @@ Contact Page
 
 #contactScroll {
 	width: 8%;
-	max-width: 50px;
+	max-width: 45px;
 	min-width: 40px;
 	margin: 50px auto 0 auto;
 

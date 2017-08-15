@@ -167,9 +167,25 @@ Background Images
 		background-position: center;
 	}
 
+	#imageTwo {
+		background-image: url("../images/MND_Web_Succulents_Mobile.jpg");
+	}
 
 	#imageThree {
 		background-position: 75%;
+		background-image: url("../images/MND_Web_Mushrooms_Mobile.jpg");
+	}
+
+	#imageFour {
+		background-image: url("../images/MND_Web_Jars_Mobile.jpg");
+	}
+
+	#imageFive {
+	background-image: url("../images/MND_Web_Chairs_Mobile.jpg");
+	}
+
+	#imageSix {
+	background-image: url("../images/MND_Web_Canoe_Mobile.jpg");
 	}
 
 	#imgCont7 {
@@ -178,6 +194,10 @@ Background Images
 
 	#imageSeven {
 		background-size: 130% auto;
+	}
+
+	#imageEight {
+		background-image: url("../images/MND_Web_Road_Mobile.jpg");
 	}
 
 /*-----------------------------------
@@ -263,10 +283,10 @@ Landing Page
 		width: 100%;
 	}
 
-	#photos {
+	#instafeed {
 
 		img {
-			width: 49.9%;
+			width: 50%;
 		}
 	}
 

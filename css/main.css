@@ -327,17 +327,31 @@ Individual Sections - Main Page
     font-size: 0.9em;
     letter-spacing: 0.8px; }
 
+/*
 #photos {
+	width: 100%;
+	margin: 60px auto;
+	font-size: 0;
+	line-height: 0;
+	border-top: 4px solid $primary-green;
+	border-bottom: 4px solid $primary-green;
+
+	img {
+		width: 33.2%;
+		margin: 0px;
+		padding: 0px;
+	}
+}
+*/
+#instafeed {
   width: 100%;
   margin: 60px auto;
   font-size: 0;
   line-height: 0;
   border-top: 4px solid #e4f8b7;
   border-bottom: 4px solid #e4f8b7; }
-  #photos img {
-    width: 33.2%;
-    margin: 0px;
-    padding: 0px; }
+  #instafeed img {
+    width: 33.33%; }
 
 #life {
   /*Bring footer closer*/
@@ -370,7 +384,7 @@ Contact Page
 
 #contactScroll {
   width: 8%;
-  max-width: 50px;
+  max-width: 45px;
   min-width: 40px;
   margin: 50px auto 0 auto; }
   #contactScroll img {
@@ -630,14 +644,30 @@ Media Queries
     background-image: url("../images/MND_Web_Stones_Mobile.jpg");
     background-position: center; }
 
+  #imageTwo {
+    background-image: url("../images/MND_Web_Succulents_Mobile.jpg"); }
+
   #imageThree {
-    background-position: 75%; }
+    background-position: 75%;
+    background-image: url("../images/MND_Web_Mushrooms_Mobile.jpg"); }
+
+  #imageFour {
+    background-image: url("../images/MND_Web_Jars_Mobile.jpg"); }
+
+  #imageFive {
+    background-image: url("../images/MND_Web_Chairs_Mobile.jpg"); }
+
+  #imageSix {
+    background-image: url("../images/MND_Web_Canoe_Mobile.jpg"); }
 
   #imgCont7 {
     height: 45%; }
 
   #imageSeven {
     background-size: 130% auto; }
+
+  #imageEight {
+    background-image: url("../images/MND_Web_Road_Mobile.jpg"); }
 
   /*-----------------------------------
   Navigation
@@ -698,8 +728,8 @@ Media Queries
   #credentials img {
     width: 100%; }
 
-  #photos img {
-    width: 49.9%; }
+  #instafeed img {
+    width: 50%; }
 
   #icons .iconItems {
     width: 37%; }
