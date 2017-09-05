@@ -12,7 +12,7 @@ Imports
 
 body, html, #container {
 	background-color: $primary-black;
-	font-family: "Proxima Nova", verdana, sans-serif;
+	font-family: "proxima-nova", verdana, sans-serif;
 	font-size: 16px;
 	color: white;
 	height: 100%;
@@ -455,6 +455,11 @@ Individual Sections - Main Page
 		font-size: 0.9em;
 		letter-spacing: 0.8px;
 	}
+}
+
+#video {
+	width: 45%;
+	margin: 30px auto 30px auto;
 }
 
 /*

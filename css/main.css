@@ -3,7 +3,7 @@ Imports
 -----------------------------------*/
 body, html, #container {
   background-color: #333333;
-  font-family: "Proxima Nova", verdana, sans-serif;
+  font-family: "proxima-nova", verdana, sans-serif;
   font-size: 16px;
   color: white;
   height: 100%;
@@ -327,6 +327,10 @@ Individual Sections - Main Page
     font-size: 0.9em;
     letter-spacing: 0.8px; }
 
+#video {
+  width: 45%;
+  margin: 30px auto 30px auto; }
+
 /*
 #photos {
 	width: 100%;
@@ -563,6 +567,9 @@ Media Queries
   .content h2 {
     line-height: 1em; }
 
+  #video {
+    width: 55%; }
+
   #conditionsTable ul {
     width: 40%; }
 
@@ -609,6 +616,9 @@ Media Queries
   .content h2 {
     line-height: 1em; }
 
+  #video {
+    width: 65%; }
+
   #icons {
     width: 80%;
     font-size: 0.85em; }
@@ -630,6 +640,9 @@ Media Queries
       font-size: 0.92em; }
     .content a {
       font-size: 0.95em; }
+
+  #video {
+    width: 100%; }
 
   /*-----------------------------------
   Background Images
@@ -664,7 +677,8 @@ Media Queries
     height: 45%; }
 
   #imageSeven {
-    background-size: 130% auto; }
+    background-size: 130% auto;
+    background-position: center top; }
 
   #imageEight {
     background-image: url("../images/MND_Web_Road_Mobile.jpg"); }
